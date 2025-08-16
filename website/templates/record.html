@@ -24,17 +24,23 @@
     </div>
 </div>
 
-<!-- This is the go back to home button. -->
+<!-- This is the "Back" to home button. -->
 <div>
     <br />
     <a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
     <br />
 </div>
 
-<!-- This is the Delete button. -->
 <div>
     <br />
-    <a href="{% url 'home' %}" class="btn btn-danger">Delete</a>
+    <a href="{% url 'update_record' customer_record.id %}" class="btn btn-success">Update Record</a>
+    <br />
+</div>
+
+<!-- This is the Delete button. Click the button will delete the record.-->
+<div>
+    <br />
+    <a href="{% url 'delete_record' customer_record.id %}" class="btn btn-danger">Delete</a>
     <br />
 </div>
 
